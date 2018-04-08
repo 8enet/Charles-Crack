@@ -2,13 +2,13 @@
 
 [![Build Status](https://travis-ci.org/8enet/Charles-Crack.svg?branch=master)](https://travis-ci.org/8enet/Charles-Crack)
 
-支持charles 4.1.3-4.2.1版本的破解，自定义注册名称
+支持charles 4.1.3-4.2.5版本的破解，自定义注册名称
 
 [立即使用](https://www.zzzmode.com/mytools/charles/)
 
 
 ## 运行
-请先配置`charles-crack.json`文件，修改`origJar`字段为本地`charles.jar`的路径
+请先配置[charles-crack.json](src/main/resources/charles-crack.json)文件，修改`origJar`字段为本地`charles.jar`的路径
 
 ```
 gradle bootJar
