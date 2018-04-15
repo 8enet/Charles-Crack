@@ -10,6 +10,7 @@ import java.io.File
 import java.nio.file.Files
 import java.nio.file.Paths
 import java.nio.file.StandardCopyOption
+import java.util.*
 
 /**
  * Created by zl on 2017/7/7.
@@ -24,9 +25,15 @@ class CharlesCrackService constructor(@Autowired private val charlesConfig: Char
         private val logger = LoggerFactory.getLogger(CharlesCrackService::class.java)
     }
 
+    class CrackResult(var file: File?=null){
+        val rid: String by lazy {
+            UUID.randomUUID().toString().replace("-","").substring(0,16)
+        }
+
+    }
 
     @Throws(RuntimeException::class)
-    fun process(name: String?,version: String?):File?{
+    fun process(name: String?,version: String?):CrackResult?{
         return version?.let {
             charlesConfig.configMap[it]?.let {
                 return handleCrack(name ?: "zzzmode",it)
@@ -35,14 +42,17 @@ class CharlesCrackService constructor(@Autowired private val charlesConfig: Char
     }
 
 
-    private fun handleCrack(name: String,config: CharlesConfig.CharlesCKVer):File?{
+    private fun handleCrack(name: String,config: CharlesConfig.CharlesCKVer):CrackResult?{
+        val result = CrackResult()
 
-        return afterSave(config.origJar,config.cls,name.normalizePath(),modifyByte(config.origJar,config.cls,{
+        result.file=afterSave(config.origJar,config.cls,result.rid,modifyByte(config.origJar,config.cls,{
             var ctMethod = getDeclaredMethod(config.m1, null)
             ctMethod.setBody("{return true;}")
             ctMethod = getDeclaredMethod(config.m2, null)
             ctMethod.setBody("{return \"$name\";}")
         }))
+
+        return result
     }
 
 
