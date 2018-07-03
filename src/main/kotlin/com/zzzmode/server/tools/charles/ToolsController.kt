@@ -68,9 +68,9 @@ class ToolsController {
 
         charlesCK.process(name, version)?.apply {
             resp.version = version
-            resp.file = "${charlesConfig.subDir}/${name.normalizePath()}/charles.jar"
-            resp.size = length()
-            logger.debug("create file $absolutePath")
+            resp.file = "${charlesConfig.subDir}/${rid}/charles.jar"
+            resp.size = file?.length()
+            logger.debug("create file ${file?.absolutePath}")
         }
 
         return resp

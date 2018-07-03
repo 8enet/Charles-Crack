@@ -18,6 +18,7 @@ java -jar build/libs/*.jar --ckConfig=/path/charles-crack.json
 
 ## 使用
 启动成功后，打开 http://127.0.0.1:8090 输入名称选择版本然后下载生成的charles.jar文件进行手动替换。
+> macOS 需要启动过一次后再替换charles.jar文件
 
 ## 参数
 
