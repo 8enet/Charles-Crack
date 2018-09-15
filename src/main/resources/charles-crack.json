@@ -1,5 +1,12 @@
 [
   {
+    "version": "4.2.7",
+    "origJar": "/Users/zl/temp/charles/charles-4.2.7.jar",
+    "cls": "com.xk72.charles.kKPk",
+    "m1": "lcJx",
+    "m2": "JZlU"
+  },
+  {
     "version": "4.2.6",
     "origJar": "/Users/zl/temp/charles/charles-4.2.6.jar",
     "cls": "com.xk72.charles.GPSz",
