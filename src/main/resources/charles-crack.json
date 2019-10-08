@@ -1,5 +1,12 @@
 [
   {
+    "version": "4.2.8",
+    "origJar": "/Users/zl/temp/charles/charles-4.2.8.jar",
+    "cls": "com.xk72.charles.qHTb",
+    "m1": "DdNM",
+    "m2": "gbef"
+  },
+  {
     "version": "4.2.7",
     "origJar": "/Users/zl/temp/charles/charles-4.2.7.jar",
     "cls": "com.xk72.charles.kKPk",
