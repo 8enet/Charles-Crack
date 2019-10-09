@@ -1,4 +1,11 @@
 [
+    {
+    "version": "4.5",
+    "origJar": "/Users/zl/temp/charles/charles-4.5.jar",
+    "cls": "com.xk72.charles.cksj",
+    "m1": "PRXy",
+    "m2": "aTFQ"
+  },
   {
     "version": "4.2.8",
     "origJar": "/Users/zl/temp/charles/charles-4.2.8.jar",
