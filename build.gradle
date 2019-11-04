@@ -4,6 +4,7 @@ buildscript {
 		springBootVersion = '2.1.9.RELEASE'
 	}
 	repositories {
+		maven { url 'https://maven.aliyun.com/repository/public/' }
 		mavenCentral()
 	}
 	dependencies {
@@ -36,6 +37,7 @@ compileTestKotlin {
 }
 
 repositories {
+	maven { url 'https://maven.aliyun.com/repository/public/' }
 	mavenCentral()
 }
 
