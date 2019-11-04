@@ -29,6 +29,7 @@ java -jar build/libs/*.jar --ckConfig=/path/charles-crack.json
 ``` 
 
 ## 更新
+* 2019-11-04 Charles 4.5.4
 * 2019-10-10 Charles 4.5.1
 * 2019-10-09 Charles 4.5
 * 2019-02-28 Charles 4.2.8
