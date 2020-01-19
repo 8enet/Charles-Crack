@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/8enet/Charles-Crack.svg?branch=master)](https://travis-ci.org/8enet/Charles-Crack)
 
-支持 Charles 4.1.3-4.5.5 版本的破解，自定义注册名称
+支持 Charles 4.1.3-4.5.6 版本的破解，自定义注册名称
 
 [立即使用](https://www.zzzmode.com/mytools/charles/)
 
@@ -29,6 +29,7 @@ java -jar build/libs/*.jar --ckConfig=/path/charles-crack.json
 ``` 
 
 ## 更新
+* 2020-01-19 Charles 4.5.6
 * 2019-12-09 Charles 4.5.5
 * 2019-11-04 Charles 4.5.4
 * 2019-10-10 Charles 4.5.1

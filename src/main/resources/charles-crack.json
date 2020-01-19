@@ -1,5 +1,12 @@
 [
   {
+    "version": "4.5.6",
+    "origJar": "/Users/zl/temp/charles/charles-4.5.6.jar",
+    "cls": "com.xk72.charles.Bvcn",
+    "m1": "FwRs",
+    "m2": "InuZ"
+  },
+  {
     "version": "4.5.5",
     "origJar": "/Users/zl/temp/charles/charles-4.5.5.jar",
     "cls": "com.xk72.charles.ymZn",
